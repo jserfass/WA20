@@ -7,7 +7,7 @@
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
 <!-- link to my css stylesheets -->
-<link rel="stylesheet" type="text/css" href="./legend.css"> 
+<link rel="stylesheet" type="text/css" href="legend.css"> 
 <style>
 body { margin: 0; padding: 0; }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
@@ -20,7 +20,7 @@ body { margin: 0; padding: 0; }
             <div id='legend'>
                 <h4>Standard Routes YDS Rating</h4>
                 <ul>
-                    <li><hr class="class5"> Class 1: Hik­ing</li>
+                    <li><hr class="class5"> Class 1: Hiking</li>
                     <li><hr class="class4"> Class 2: Simple Scrambling</li>
                     <li><hr class="class3"> Class 3: Scrambling</li>
                     <li><hr class="class2"> Class 4: Simple Climbing</li>
@@ -46,7 +46,7 @@ hash: false
 // Start downloading the route data, and wait for map load to occur in parallel
 const [pinRouteGeojson] = await Promise.all([
 fetch(
-'data/rainier.geojson'
+'/data/rainier.geojson'
 ).then((response) => response.json()),
 map.once('style.load')
 ]);
