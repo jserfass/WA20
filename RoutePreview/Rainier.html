@@ -46,7 +46,7 @@ hash: false
 // Start downloading the route data, and wait for map load to occur in parallel
 const [pinRouteGeojson] = await Promise.all([
 fetch(
-'../data/rainier.geojson'
+'.../data/rainier.geojson'
 ).then((response) => response.json()),
 map.once('style.load')
 ]);
