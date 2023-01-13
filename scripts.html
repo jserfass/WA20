@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Washington's 20 Most Prominent: A Story of Adventure</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <!-- Mapbox links -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script>
+    <script src= "https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <!-- link to my css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="legend.css">  
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="map" style="height: 100%; width: 100%", padding="10px">
+        <nav id="menu"></nav>
+        <div id='legend'>
+            <h4>Standard Routes YDS Rating</h4>
+            <ul>
+                <li><hr class="class5"> Class 1: Hik­ing</li>
+                <li><hr class="class4"> Class 2: Simple Scrambling</li>
+                <li><hr class="class3"> Class 3: Scrambling</li>
+                <li><hr class="class2"> Class 4: Simple Climbing</li>
+                <li><hr class="class1"> Class 5: Technical Climbing</li>
+                <li><hr class="npsboundary"> NPS Lands</li>
+                <li><hr class="usfsboundary"> USFS Lands</li>
+                <li><hr class="stateboundary"> WA State Boundary</li>
+            </ul>
+        </div>
+    </div><br>
+     <!-- link to my .js file -->
+     <script type="text/javascript" src="data/scripts.js"></script>
+</body>
+</html>
